@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+   mongo:
+      image: mongo
+      container_name: mongodb-bank
+      restart: always
+      environment:
+         MONGO_INITDB_ROOT_USERNAME: root
+         MONGO_INITDB_ROOT_PASSWORD: password
+      ports:
+         - 27019:27019
+      volumes:
+         - mongo-data:/D/microservice-cuentasBancarias/bd
+volumes:
+   mongo-data:
