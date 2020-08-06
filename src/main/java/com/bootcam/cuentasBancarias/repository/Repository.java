@@ -1,4 +1,4 @@
-package com.ultimatesoftware.banking.api.repository;
+package com.bootcam.cuentasBancarias.repository;
 
 import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.UpdateResult;
